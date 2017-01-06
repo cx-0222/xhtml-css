@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>文本换行</title>
+		<style type="text/css">
+			.div1 {
+				width: 200px;
+				height: 200px;
+				border: 1px solid blue;
+			}
+			.div1{
+				/*以单词换行 优先考虑单词，以单词为单位换行*/
+				word-wrap: break-word;
+				/*优先考虑边界，会截断单词达到换行*/
+				word-break: break-all;
+			} 
+		</style>
+	</head>
+	<body>
+	<!-- 中文会换行   单词会换行  字母不换 -->
+		<div class="div1"></div>
+	</body>
+</html>

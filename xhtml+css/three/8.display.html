@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Display</title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+			}
+
+			div {
+
+				/*block 块级元素(是默认的)*/
+				/*1、独占一行，不管有没有设置宽度(没有设置宽度，宽度默认跟父类等宽)*/
+				/*2、支持宽高*/
+				/*3、支持所有css样式*/
+				display: block;
+
+				/*块级元素强行改成行级元素*/
+				/*1、共占一行，显示不下后自动换行*/
+				/*2、不支持宽高 宽高由内容撑开*/
+				/*3、支持部分css样式(只支持margin、padding左右，不支持上下)*/
+				display: inline;  
+
+				/*内联块元素*/
+				/*1、共占一行，显示不下后自动换行，且支持宽高*/
+				/*2、支持所有css样式*/
+				display: inline-block;
+
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 块标签 行标签  行联块标签 -->
+		<!-- 块级元素  内联元素 内联块元素 -->
+		<div>123</div>
+		<div style="margin-left: -4px;">123</div>
+		<div>123</div>
+	</body>
+</html> 

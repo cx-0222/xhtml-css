@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度糯米</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			border:none;
+		}
+
+		ul li {
+			list-style: none;
+		}
+		a {
+			color: black;
+			text-decoration: none;
+		}
+		body {
+			position: relative;
+		}
+		.user {
+			width: 1905px;
+			height: 37px;
+			background-color: #FAFAFA; 
+			font-size: 12px;
+			/*padding-bottom: 1px solid #FAFAFA;*/
+		
+			
+		}
+		.user li {
+			display: inline-block;
+		}
+		.user ul {
+			display: inline-block;
+			line-height: 37px;
+		}
+		#address_city {
+			width: 24px;
+			/*height: 36px;*/
+			border-left: 1px solid #FAFAFA;
+			border-right: 1px solid #FAFAFA;
+			padding-right: 10px;
+			/*font-size: 12px;*/
+		
+		}
+		#city_name {
+			width: 60px;
+			padding-left: 10px;
+			padding-right: 10px;
+			/*font-size: 12px;*/
+		
+		}
+		.user_information {
+			margin-left: 380px;
+		
+		}
+		.user_information li {
+			padding-left: 10px;
+			padding-right: 10px;
+			/*border-left: 1px solid black;*/
+
+		}
+		#user {
+			position: absolute;
+			left: 347px;
+		}
+
+		.sep-lines {
+			width: 1px;
+			height: 12px;
+			border-left: 1px solid black;
+			position: absolute;
+			top: 12px;
+			/*right: -10px;*/
+			width: 1px;
+
+
+		}
+
+
+
+		/*search样式*/
+		.search {
+			position: absolute;
+			width: 1905px;
+			height: 60px;
+			margin-top: 30px;
+			/*background-color: yellow;*/
+		}
+		.search_logo {
+			display: inline-block;
+			float: left;
+			margin-top: 8px;
+
+		}
+		#searchInput {
+
+			display: inline-block;
+			width: 407px;
+			height: 18px;
+			padding-left: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-right: 16px;
+			border: 1px solid black;
+		}
+		#searchButton {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			border: 1px solid black;
+			top: 12px;
+		}
+		.reco_list li {
+			font-size: 12px;
+			display: inline-block;
+		}
+
+		.search_area {
+			position: relative;
+			width: 484px;
+			height: 40px;
+			margin-left: 310px;
+			display: inline-block;
+		}
+		.reco_list {
+			position: absolute;
+			top: 3px;
+			right: 50px;
+		}
+
+
+		.search_right1{
+			width: 50px;
+			height: 24px;
+			display: inline-block;
+			text-align: center;
+		}
+		.search_right2{
+			width: 50px;
+			height: 24px;
+			padding-left: 1px;
+			padding-right: 1px;
+			display: inline-block;
+			text-align: center;
+		}
+		.search_right3{
+			width: 20px;
+			height: 24px;
+			display: inline-block;
+			text-align: center;
+		}
+
+		.search_right{
+			line-height: 24px;
+			font-size: 16px;
+			display: inline-block;
+			width: 152px;
+			height: 24px;
+			margin-left: 10px;
+
+			padding-top: 7px;
+			padding-bottom: 7px;
+			border-bottom: 2px solid #FEDA4E; 
+			background-color: #FEDA4E; 
+		}
+		.search {
+			line-height: 60px;
+				
+		}
+		.search_logo {
+			margin-left: 347px;
+		}
+
+
+
+
+/*title*/
+
+		.search{
+			position: relative;
+			
+		}
+		#title {
+			position: absolute;
+			width: 1905px;
+			height: 44px;
+			/*background-color: yellow;*/
+		}
+		.title_content {
+			color: white;
+			font-size: 20px;
+			width: 1210px;
+			height: 44px;
+			line-height:44px; 
+			margin-left: 347px;
+			background-color: #313137;
+
+		}
+		.title_content li{
+			display: inline-block;
+		}
+		.title_content_1 {
+			width: 208px;
+			height: 44px;
+			padding-left: 18px;
+			background-color: #FF318C;
+			
+		}
+		.title_content_2 {
+
+			width: 86px;
+			height: 44px;
+			padding-left: 10px;
+			padding-right: 10px;
+			background-color: #080809;
+		}
+		.title_content_3 {
+			background-color: #313137;
+			width: 100px;
+			height: 44px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.title_content_4 {
+			background-color: #313137;
+			width: 86px;
+			height: 44px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.title_content_5 {
+			background-color: #313137;
+			width: 86px;
+			height: 44px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.title_content_6 {
+			background-color: #313137;
+			width: 86px;
+			height: 44px;
+			padding-left: 10px;
+			padding-right: 10px;
+			display: inline-block;
+		}
+		.title_content_7 {
+			background-color: #313137;
+			width: 86px;
+			height: 44px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.title_content_8 {
+			background-color: #313137;
+			width: 86px;
+			height: 44px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.title_content_9 {
+			background-color: #313137;
+			width: 86px;
+			height: 44px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+
+		/*left_menu*/
+		.title_content_1 {
+			position: relative;
+		}
+		.left_menu {
+			position: absolute;
+			top: 44px;
+			width: 226px;
+			height: 416px;
+			border-left: 1px solid black;
+			/*display: inline-block;*/
+			
+		}
+		.left_menu_1 {
+			width: 224px;
+			height: 52px;
+		
+		}
+		.left_menu_2 {
+			width: 224px;
+			height: 52px;
+		
+		}
+		.left_menu_3 {
+			width: 224px;
+			height: 52px;
+		
+		}
+		.left_menu_4 {
+			width: 224px;
+			height: 52px;
+		
+		}
+		.left_menu_5 {
+			width: 224px;
+			height: 52px;
+		
+		}
+		.left_menu_6 {
+			width: 224px;
+			height: 52px;
+	
+		}
+		.left_menu_7 {
+			width: 224px;
+			height: 52px;
+			
+		}
+		.left_menu_8 {
+			width: 224px;
+			height: 52px;
+			
+		}
+		.kind1 {
+			width: 184px;
+			height: 51px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-bottom: 1px solid #DFDFDF;
+			border-left: 1px solid #DFDFDF;
+			background-color: #F9F9F9;
+			color: black;
+			font-size: 16px;
+			margin-left: -19px;
+		}
+		.kind2 {
+			width: 184px;
+			height: 51px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-bottom: 1px solid #DFDFDF;
+			border-left: 1px solid #DFDFDF;
+			background-color: #F9F9F9;
+			color: black;
+			font-size: 16px;
+			margin-left: -19px;
+
+		}
+		.kind3 {
+			width: 184px;
+			height: 51px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-bottom: 1px solid #DFDFDF;
+			border-left: 1px solid #DFDFDF;
+			background-color: #F9F9F9;
+			color: black;
+			font-size: 16px;
+			margin-left: -19px;
+		}
+		.kind4 {
+			width: 184px;
+			height: 51px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-bottom: 1px solid #DFDFDF;
+			border-left: 1px solid #DFDFDF;
+			background-color: #F9F9F9;
+			color: black;
+			font-size: 16px;
+			margin-left: -19px;
+		}
+		.kind5 {
+			width: 184px;
+			height: 51px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-bottom: 1px solid #DFDFDF;
+			border-left: 1px solid #DFDFDF;
+			background-color: #F9F9F9;
+			color: black;
+			font-size: 16px;
+			margin-left: -19px;
+		}
+		.kind6 {
+			width: 184px;
+			height: 51px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-bottom: 1px solid #DFDFDF;
+			border-left: 1px solid #DFDFDF;
+			background-color: #F9F9F9;
+			color: black;
+			font-size: 16px;
+			margin-left: -19px;
+		}
+		.kind7 {
+			width: 184px;
+			height: 51px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-bottom: 1px solid #DFDFDF;
+			border-left: 1px solid #DFDFDF;
+			background-color: #F9F9F9;
+			color: black;
+			font-size: 16px;
+			margin-left: -19px;
+		}
+		.kind8 {
+			width: 184px;
+			height: 51px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-bottom: 1px solid #DFDFDF;
+			border-left: 1px solid #DFDFDF;
+			background-color: #F9F9F9;
+			color: black;
+			font-size: 16px;
+			margin-left: -19px;
+		}
+		.left_menu span {
+			margin-left: 30px;
+			color: black;
+			font-size: 12px;
+		}
+
+
+		/* */
+	
+		 
+		.center_conter{
+			width: 1210px;
+			height: 7759px;
+			margin-left: 347px;
+			margin-right: 348px;
+			/*background-color: yellow*/;
+		
+		}
+		.contain {
+			
+			width: 964px;
+			height: 460px;
+			/*background-color: red;*/
+			/*position: relative;*/
+
+
+			
+		}
+		.contain_center {
+			width: 737px;
+			height: 460px;
+			margin-left: 226px;
+			/*background-color: blue;*/
+			display: inline-block;
+			
+		}
+		.contain_center.pic {
+			position: absolute;
+			/*padding-top: 44px;*/
+			width: 737px;
+			height: 259px;
+			margin-top: 44px;
+		}
+		.goods {
+			width: 737px;
+			height: 199px;
+			/*background-color: red;*/
+		}
+
+
+		.goods_list1 {
+			width: 202px;
+			height: 132px;
+			padding-top: 28px;
+			padding-left: 30px;
+			padding-right: 10px;
+			padding-bottom: 30px;
+			
+			border-right: 1px solid #DFDFDF;
+			border-bottom: 1px solid #DFDFDF;
+			
+			display: inline-block;
+			vertical-align: top;
+		}
+		.goods_list2 {
+			width: 202px;
+			height: 132px;
+			padding-top: 28px;
+			padding-left: 30px;
+			padding-right: 10px;
+			padding-bottom: 30px;
+			
+			border-right: 1px solid #DFDFDF;
+			border-bottom: 1px solid #DFDFDF;
+			
+			display: inline-block;
+			vertical-align: top;
+		}
+		.goods_list3 {
+			width: 202px;
+			height: 132px;
+			padding-top: 28px;
+			padding-left: 30px;
+			padding-right: 10px;
+			padding-bottom: 30px;
+		
+			border-right: 1px solid #DFDFDF;
+			border-bottom: 1px solid #DFDFDF;
+			
+			display: inline-block;
+		}
+
+		.goods_list1_title {
+			width: 185px;
+			height: 22px;
+			font-size: 22px;
+			padding-right: 20px;
+			margin-top: 30px;
+			text-align: center;
+
+		}
+		.goods_list1_title_list1 li{
+			margin-top: 10px;
+			display: inline-block;
+			margin-right: 6px;
+		}
+		.goods_list1_title_list2 li{
+			margin-top: 10px;
+			display: inline-block;
+			margin-right: 6px;
+		}
+
+
+
+		.goods_list2_title {
+			width: 185px;
+			height: 22px;
+			font-size: 22px;
+			padding-right: 20px;
+			margin-top: 30px;
+			text-align: center;
+
+		}
+		.goods_list2_title_list1 li{
+			margin-top: 10px;
+			display: inline-block;
+			margin-right: 6px;
+		}
+		.goods_list2_title_list2 li{
+			margin-top: 10px;
+			display: inline-block;
+			margin-right: 6px;
+		}
+
+
+		.goods_list3_title {
+			width: 185px;
+			height: 22px;
+			font-size: 22px;
+			padding-right: 20px;
+			margin-top: 30px;
+			text-align: center;
+
+		}
+		.goods_list3_title_list1 li{
+			margin-top: 10px;
+			display: inline-block;
+			margin-right: 6px;
+		}
+		.goods_list3_title_list2 li{
+			margin-top: 10px;
+			display: inline-block;
+			margin-right: 6px;
+		}
+
+
+
+		.download {
+			display: inline-block;
+			position: absolute;
+			top: 171px;
+			right: 327px;
+			width: 266px;
+			height: 416px;
+			/*margin-left: 900px;*/
+			
+		}
+		
+		.goodsIformation_left_contain ul {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		#img5 {
+			width: 228px; 
+			height: 329px
+		}
+		#img6,#img7,#img8,#img9,#img10,#img11,#img12,#img13,#img14,#img15,#img16,#img17,#img18,#img19,#img20,#img21,#img22,#img23,#img24,#img25 {
+			width: 106px;
+			height: 75px;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-top: 1px;
+			/*line-height: 81px;*/
+		}
+		.img6,.img7,.img8,.img9,.img10,.img11,.img12,.img13,.img14,.img15,.img16,.img17,.img18,.img19,.img20,.img21,.img22,.img23,.img24,.img25 {
+			width: 142px;
+			height: 81px;
+
+			border: 1px solid #DFDFDF;
+			border-left: none;
+			border-top: none;
+			text-align: center;
+		}
+
+		.img6,.img10,.img14,.img18,.img22{
+			border-top:1px solid #DFDFDF; 
+		}
+
+
+
+		.goodsIformation_left {
+			position: relative;
+		}
+
+
+
+		.goodsIformation_left_title {
+			width: 964px;
+			height: 40px;
+			padding-top: 20px;
+			position: absolute;
+		}
+
+		.goodsIformation_left_title {
+				position: relative;
+		}
+		.goodsIformation_left_contain {
+				position: absolute;
+		}
+
+
+		.goodsIformation_left_title1 {
+			width: 80px;
+			height: 40px;
+			font-size: 18px;
+			line-height: 40px;
+		}
+		.goodsIformation_left_title2 {
+			width: 123px;
+			height: 22px;
+			margin-top: 13px;
+			margin-left: 5px;
+			font-size: 14px;
+
+		}
+		.goodsIformation_left_title3 {
+			width: 36px;
+			height: 32px;
+			margin-top: 20px;
+			font-size: 12px;
+			float: right;
+
+		}
+
+		.goodsIformation_left {
+			position: relative;
+		}
+		.goodsIformation_right {
+			position: absolute;
+			left: 980px;
+			width: 226px;
+			height: 388px;
+			margin-top: -60px;
+			
+		}
+
+		.goodsIformation_right_title {
+			width: 226px;
+			height: 40px;
+			padding-top: 20px;
+			font-size: 18px;
+			line-height: 40px;
+			/*background-color: pink;*/
+		}
+		
+
+		.goodsIformation {
+			position: relative;
+		}
+
+		.floot_content {
+			position: absolute;
+			top: 1000px;
+			width: 1210px;
+			height: 6713px;
+		}
+		
+		.floot_content_start {
+			width: 1210px;
+			/*height: 2826px;*/
+
+			padding-top: 7px;
+			margin-top: 13px;
+			
+		}
+
+		.floot_content_start_header {
+			width: 1210px;
+			height: 27px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+		
+		}
+
+		.floot_content_start_header h3 {
+			width: 40px;
+			height: 27px;
+			display: inline-block;
+			float: left;
+			line-height: 27px;
+		}
+
+		.reco_words {
+			width: 422px;
+			height: 29px;
+			float: right;
+			/*line-height: 29px;*/
+			display: inline-block;
+		}
+		.reco_words li {
+			display: inline-block;
+			width: 48px;
+			height: 15px;
+			font-size: 12px;
+			padding-left: 18px;
+			padding-right: 18px;
+			margin-top: 12px;
+			/*line-height: 15px;*/
+			border-right:1px solid #767676;
+		}
+		.floot_content_start_list {
+			width: 1210px;
+			/*height: 2750px;*/
+			height: 720px;
+			position: relative;
+		}
+		.floot_content_start_list1 {
+			position: absolute;
+			width: 226px;
+			height: 294px;
+			margin-top: 4px;
+			margin-bottom: 50px;
+			/*padding-top: 4px;*/
+			/*border-bottom: 1px solid #DFDFDF;*/
+		}
+
+		#img28,#img29,#img30,#img31,#img32, #img33, #img34, #img35,#img36,#img37 {
+			width: 224px;
+			height: 135px;
+			border: 1px solid #DFDFDF;
+			margin-top: -4px;
+		}
+		.floot_content_start_list h4 {
+			width: 224px;
+			height: 25px;
+			font-size: 18px;
+			line-height: 25px;
+			/*text-overflow: ellipsis;*/
+
+		}
+		.floot_content_start_list p {
+			width: 226px;
+			height: 40px;
+			font-size: 15px;
+			color: #767676;
+			margin-top: 10px;
+			/*line-height: 40px;*/
+			/*text-overflow: ellipsis;*/
+
+		}
+		.manfan {
+			width: 48px;
+			height: 18px;
+			font-size: 16px;
+			padding-right: 2px;
+			padding-left: 2px;
+			margin-right: 5px;
+			color: white;
+			background-color: #FF4883;
+			/*text-overflow: ellipsis;*/
+
+		}
+		.goodsPrice {
+			width: 226px;
+			height: 35px;
+			/*background-color: red;*/
+			font-size: 20px;
+			line-height: 35px;
+			margin-top: 30px;
+			color: #FF4883;
+
+		}
+		.moneyico {
+			color: #FF4883;
+			font-size: 14px;
+		}
+		
+		.jiazhi {
+			color: #767676;
+			font-size: 14px;
+		}
+		.jiage {
+			color: #767676;
+			text-decoration: line-through;
+		}
+
+		.xinyong {
+			width: 226px;
+			height: 23px;
+		
+			font-size: 12px;
+			line-height: 23px;
+		}
+		.fenshu {
+			color: #4586B9;
+		}
+		.xiaoliang {
+			float: right;
+		}
+		.floot_content_start_list2 {
+			position: absolute;
+			left: 226px;
+			margin-left: 20px;
+			padding-top: 4px;
+			/*border-bottom: 1px solid #DFDFDF;*/
+		}
+		.floot_content_start_list3 {
+			position: absolute;
+			left: 472px;
+			margin-left: 20px;
+			padding-top: 4px;
+		}
+		.floot_content_start_list4 {
+			position: absolute;
+			left: 718px;
+			margin-left: 20px;
+			padding-top: 4px;
+		}
+		.floot_content_start_list5 {
+			position: absolute;
+			left: 964px;
+			margin-left: 20px;
+			padding-top: 4px;
+		}
+
+		.floot_content_start_list6 {
+			position: absolute;
+			top:344px;
+			margin-top: 35px;
+			/*padding-top: 4px;*/
+		}
+		.bottom-border1 {
+			display: inline-block;
+			position: absolute;
+			bottom: -45px;
+			width: 246px;
+			left: 0px;
+			/*height: 1px;*/
+			border-bottom: 1px solid #DFDFDF;
+		}
+		.bottom-border {
+			display: inline-block;
+			position: absolute;
+			vertical-align: top;
+			bottom: -25px;
+			width: 246px;
+			left: 0px;
+			/*height: 1px;*/
+			border-bottom: 1px solid #DFDFDF;
+		}
+		.floot_content_start_list7 {
+			position: absolute;
+			top:344px;
+			
+			margin-top: 35px;
+			left: 226px;
+			margin-left: 20px;
+			/*padding-top: 4px;*/
+			/*padding-top: 4px;*/
+		}
+
+		.floot_content_start_list8 {
+			position: absolute;
+			top:344px;
+			
+			margin-top: 35px;
+			left: 472px;
+			margin-left: 20px;
+	
+		}
+		.floot_content_start_list9 {
+			position: absolute;
+			top:344px;
+			
+			margin-top: 35px;
+			left: 718px;
+			margin-left: 20px;
+	
+		}
+		.floot_content_start_list10 {
+			position: absolute;
+			top:344px;
+			
+			margin-top: 35px;
+			left: 964px;
+			margin-left: 20px;
+	
+		}
+		.check_all {
+			width: 1208px;
+			height: 35px;
+			font-size: 13px;
+			text-align: center;
+			background-color: #F5F5F5;
+			line-height: 35px;
+			color: #767676;
+			border: 1px solid #DFDFDF;
+		}
+
+		.bottom_category {
+			width: 964px;
+			height: 191px;
+			border: 1px solid #DFDFDF;
+			margin-top: 35px;
+		}
+		.bottom_cate {
+			width: 964px;
+			height: 191px;
+		}
+		.tab_nav {
+			width: 964px;
+			height: 30px;
+			border-bottom: 1px solid #DFDFDF;
+			line-height: 30px;
+		}
+		.tab_nav li {
+			width: 97px;
+			height: 30px;
+			color: #767676;
+			display: inline-block;
+			border-right: 1px solid #DFDFDF;
+		}
+		.bottom_content {
+			width: 924px;
+			height: 120px;
+			padding: 20px;
+			background-color: #F5F5F5;
+		}
+		.bottom_content li {
+			width: 180px;
+			height: 22px;
+			display: inline-block;
+			color: #767676;
+		}
+
+		.hotMarket{
+			background-color: #F5F5F5;
+		}
+
+
+
+
+		.footer_content {
+			position: absolute;
+			top: 2042px;px;
+			width: 1905px;
+			height: 422px;
+			margin-top: 105px;
+			border: 1px solid #DFDFDF;
+		
+		}
+		.footer {
+			width: 1905px;
+			height: 250px;
+			border-top: 1px solid #DFDFDF;
+			border-bottom: 1px solid #DFDFDF; 
+		}
+		.footer_inner {
+			width: 1210px;
+			height: 150px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			margin-left: 347px;
+			text-align: center;
+			/*background-color: red;*/
+		}
+		.footer_inner1 {
+			float: left;
+			width: 180px;
+			height: 150px;
+			border-right: 1px solid #DFDFDF;
+		}
+		.footer_inner2, .footer_inner3, .footer_inner4 {
+			float: left;
+			width: 241px;
+			height: 150px;
+			border-right: 1px solid #DFDFDF;
+
+		}
+		.footer_inner5 {
+			float: right;
+			width: 301px;
+			height: 150px;
+			border-right: 1px solid #DFDFDF;
+		}
+		.footer_inner1 h3 {
+			color: #767676;
+			width: 180px;
+			height: 21px;
+			margin-bottom: 20px;
+		}
+		.footer_inner1 li {
+			color: #767676;
+			width: 180px;
+			height: 16px;
+			margin-bottom: 9px;
+		}
+		.footer_inner2 h3, .footer_inner3 h3, .footer_inner4 h3 {
+			color: #767676;
+			width: 241px;
+			height: 21px;
+			margin-bottom: 20px;
+		}
+		.footer_inner2 li, .footer_inner3 li, .footer_inner4 li {
+			color: #767676;
+			width: 241px;
+			height: 16px;
+			margin-bottom: 9px;
+		}
+		.footer_inner5 h3 {
+			color: #767676;
+			width: 301px;
+			height: 21px;
+			margin-bottom: 20px;
+		}
+		.footer_inner5 li {
+			color: #767676;
+			width:301x;
+			height: 16px;
+			margin-bottom: 9px;
+		}
+	</style>
+</head>
+<body>
+	<div class="user">
+	<div id="user">
+		<ul class="city">
+			<li id="address_city">上海</li>
+			<span class="sep-lines"></span>
+			<li id="city_name"><a href="">切换城市</a></li>
+		</ul>
+		<a href="">
+			<ul class="user_information">
+				<li>登录</li>
+				<span class="sep-lines"></span>
+				<li>注册</li>
+				<span class="sep-lines"></span>
+				<li>糯米企业版</li>
+				<span class="sep-lines"></span>
+				<li>手机糯米</li>
+				<span class="sep-lines"></span>
+				<li>我的订单</li>
+				<span class="sep-lines"></span>
+				<li>我的糯米</li>
+				<span class="sep-lines"></span>
+				<li>最近浏览</li>
+				<span class="sep-lines"></span>
+				<li>我是商家</li>
+				<span class="sep-lines"></span>
+				<li>帮助中心</li>
+				<span class="sep-lines"></span>
+				<li>关注</li>
+				<span class="sep-lines"></span>
+				<li>收藏</li>
+			</ul>
+		</a>
+		</div>
+	</div>
+	<div class="search">
+	<div id="search">
+		<div class="search_logo">
+			<a>
+				<img src="img/nuomi/1.png" alt="">
+			</a>
+		</div>
+
+		<div class="search_area">
+		<div id="search_area">
+			<input type="text" id="searchInput" value="搜索商家或地点">
+			<input type="submit" id="searchButton" value mon="search_button" >
+	</div>
+
+		 <ul class="reco_list">
+			<li><a href="">聚优惠...</a></li>
+			<li><a href=""></a>必胜客</li>
+			<li><a href=""></a>避风塘</li>
+		</ul> 
+		
+	</div>
+
+
+		<div class="search_right">
+			<div class="search_right1">退</div>
+			<div class="search_right2">赔</div>
+			<div class="search_right3">￥</div>
+		</div>
+		</div>
+	</div>
+	<div class="title">
+	<div id="title">
+		<div class="title_content">
+			<ul>
+				<li class="title_content_1">全部分类
+					<div class="left_menu">
+						<div class="left_menu_1"><div class="kind1">美食<span>精选品牌 小吃快餐</span></div></div>
+						<div class="left_menu_2"><div class="kind2">电影<span>在线订座 电影票团购</span></div></div>
+						<div class="left_menu_3"><div class="kind3">休闲娱乐<span>游乐园/水上乐园</span></div></div>
+						<div class="left_menu_4"><div class="kind4">一元抢宝<span>苹果手机 小米</span></div></div>
+						<div class="left_menu_5"><div class="kind5">生活服务<span>丽人 配镜</span></div></div>
+						<div class="left_menu_6"><div class="kind6">酒店<span>上海 北京 广州</span></div></div>
+						<div class="left_menu_7"><div class="kind7">本地生活<span>温泉洗浴 采摘</span></div></div>
+						<div class="left_menu_8"><div class="kind8">丽人<span>美发 美容SPA 美甲</span></div></div>
+					</div>
+				</li>
+				<li class="title_content_2">首页</li>
+				<li class="title_content_3">精选品牌</li>
+				<li class="title_content_4">电影</li>
+				<li class="title_content_5">酒店</li>
+				<li class="title_content_6">出行</li>
+				<li class="title_content_7">一元抢宝</li>
+				<li class="title_content_8">外卖</li>
+				<li class="title_content_9">今日新单</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	 <div class="center_conter">
+	 	<div class="contain">
+	 		<div class="contain_center">
+	 			<div class="contain_center.pic">
+	 				<img id="contain_center.pic" src="img/nuomi/2.jpg" alt="">
+	 				<div class="goods">
+			 			<div class="goods_list1">
+			 				<div class="goods_list1_title">热门团购</div>
+			 				<ul class="goods_list1_title_list1">
+			 					<li>电影</li>
+			 					<li>自助餐</li>
+			 					<li>ktv</li>
+			 					<li>火锅</li>
+			 				</ul>
+			 				<ul class="goods_list1_title_list2">
+			 				<li>蛋糕</li>
+			 				<li>酒店</li>
+			 				<li>小吃快餐</li>
+			 				<li>西餐</li>
+			 				</ul>
+			 			</div>
+			 			<div class="goods_list2">
+			 			
+						<div class="goods_list2_title">全部区域</div>
+			 				<ul class="goods_list2_title_list1">
+			 					<li>地铁附近</li>
+			 					<li>浦东新区</li>
+			 					<li>闵行区</li>
+			 				
+			 				</ul>
+			 			<ul class="goods_list2_title_list2">
+			 				<li>宝山区</li>
+			 				<li>普陀区</li>
+			 				<li>徐汇区</li>
+			 				
+			 			</ul>
+			 			</div>
+			 			<div class="goods_list3">
+						<div class="goods_list3_title">热门商圈</div>
+			 				<ul class="goods_list3_title_list1">
+			 					<li>五角场</li>
+			 					<li>人民广场</li>
+			 					<li>梅川路</li>			
+			 				</ul>
+			 			<ul class="goods_list3_title_list2">
+			 				<li>松江镇</li>
+			 				<li>金桥</li>
+			 				<li>奉贤</li>
+			 				<li>打浦桥</li>
+			 			</ul>
+			 			</div>
+			 		</div>
+	 			</div>
+	 		</div>
+	 		<div class="download">
+	 			<img style="width: 245px; height: 223px" src="img/nuomi/3.jpg" alt="">
+	 			<img style="width: 245px; height: 190px; border-bottom: 1px solid #DFDFDF;" src="img/nuomi/4.png" alt="">
+	 		</div>
+	 	</div>
+	 	
+
+
+	 	<div class="goodsIformation">
+	 		<div class="goodsIformation_left">
+	 			<div class="goodsIformation_left_title">
+	 				<span class="goodsIformation_left_title1">精选品牌</span>
+	 				<span class="goodsIformation_left_title2">Brand selection</span>
+	 				<span class="goodsIformation_left_title3">全部</span>
+	 			</div>
+	 			<div class="goodsIformation_left_contain">
+	 				<ul class="goodsIformation_left_contain1">
+	 					<li class="img5"><img id="img5" src="img/nuomi/5.png"></li>
+	 				</ul>
+	 				<ul class="goodsIformation_left_contain2"> 
+		 				<li class="img6"><img id="img6" src="img/nuomi/6.jpg">	</li>
+		 				<li class="img7"><img id="img7" src="img/nuomi/7.jpg"></li>
+		 				<li class="img8"><img id="img8" src="img/nuomi/8.jpg"></li>
+		 				<li class="img9"><img id="img9" src="img/nuomi/9.jpg"></li> 
+	 				</ul>
+	 				<ul class="goodsIformation_left_contain3"> 
+		 				<li class="img10"><img id="img10" src="img/nuomi/10.jpg"></li>
+		 				<li class="img11"><img id="img11" src="img/nuomi/11.jpg"></li>
+		 				<li class="img12"><img id="img12" src="img/nuomi/12.jpg"></li>
+		 				<li class="img13"><img id="img13" src="img/nuomi/13.jpg"></li> 
+	 				</ul>
+	 				<ul class="goodsIformation_left_contain4"> 
+		 				<li class="img14"><img id="img14" src="img/nuomi/14.jpg"></li>
+		 				<li class="img15"><img id="img15" src="img/nuomi/15.jpg"></li>
+		 				<li class="img16"><img id="img16" src="img/nuomi/16.jpg"></li>
+		 				<li class="img17"><img id="img17" src="img/nuomi/17.jpg"></li> 
+	 				</ul>
+	 				<ul class="goodsIformation_left_contain5"> 
+		 				<li class="img18"><img id="img18" src="img/nuomi/18.jpg"></li>
+		 				<li class="img19"><img id="img19" src="img/nuomi/19.jpg"></li>
+		 				<li class="img20"><img id="img20" src="img/nuomi/20.jpg"></li>
+		 				<li class="img21"><img id="img21" src="img/nuomi/21.jpg"></li> 
+	 				</ul>
+	 				<ul class="goodsIformation_left_contain6">
+		 				<li class="img22"><img id="img22" src="img/nuomi/22.jpg"></li>
+		 				<li class="img23"><img id="img23" src="img/nuomi/23.jpg"></li>
+		 				<li class="img24"><img id="img24" src="img/nuomi/24.jpg"></li>
+		 				<li class="img25"><img id="img25" src="img/nuomi/25.jpg"></li> 
+	 				</ul>
+	 			</div>
+	 		
+	 		<div class="goodsIformation_right">
+	 			<div class="goodsIformation_right_title">热门专题</div>
+	 			<div class="goodsIformation_right_contain">
+	 				<img id="img26" src="img/nuomi/26.png" alt="">
+	 				<img id="img27" src="img/nuomi/27.png" alt="" style="margin-top: 20px;">
+	 			</div>
+	 			</div>
+	 		</div>
+	 	</div>
+	 	
+
+		<div class="floot_content">
+			<div class="floot_content_start">
+				<div class="floot_content_start_header">
+					<h3>美食</h3>
+					<ul class="reco_words">
+						<li>精选品牌</li>
+						<li>小吃快餐</li>
+						<li>自助餐</li>
+						<li>其他美食</li>
+						<li style="border: none; padding-right: 0px;">全部</li>
+					</ul>
+				</div>
+				<ul class="floot_content_start_list">
+					<li class="floot_content_start_list1">
+						<img id="img28" src="img/nuomi/28.jpg" alt="">
+						<div class="img28Information">
+							<h4>【七点通用】青花椒砂锅鱼</h4>
+							<p>100元代金券！屈臣氏千滋百味！免费WiFi</p>
+							<div>
+								<span class="manfan">验券满返</span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>89.9
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">100</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.7分</span>
+								<span class="xiaoliang">已售7507</span>
+								<div class="bottom-border1"></div>
+							</div>
+						</div>
+					</li>
+					<li class="floot_content_start_list2">
+						
+
+						<img id="img29" src="img/nuomi/29.jpg" alt="">
+						<div class="img29Information">
+							<h4>【多店通用】紫燕百味鸡</h4>
+							<p>22元代金券！</p>
+							<div>
+								<span class="manfan" style="background-color: white; "></span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>20
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">22</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.7分</span>
+								<span class="xiaoliang">已售25825</span>
+									<div class="bottom-border"></div>
+								
+							</div>
+						</div>
+
+					</li>
+					<li class="floot_content_start_list3">
+						
+						<img id="img30" src="img/nuomi/30.jpg" alt="">
+						<div class="img30Information">
+							<h4>【五角场】曼哈顿自助餐</h4>
+							<p>午市自助餐1位，免费WiFi</p>
+							<div>
+								<span class="manfan">立减7.5元</span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>108
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">118</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.7分</span>
+								<span class="xiaoliang">已售4042</span><div class="bottom-border"></div>
+								
+							</div>
+						</div>
+
+
+					</li>
+					<li class="floot_content_start_list4">
+						
+
+						
+						<img id="img31" src="img/nuomi/31.jpg" alt="">
+						<div class="img30Information">
+							<h4>【五角场】曼哈顿自助餐</h4>
+							<p>午市自助餐1位，免费WiFi</p>
+							<div>
+								<span class="manfan">立减7.5元</span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>128
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">138</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.5分</span>
+								<span class="xiaoliang">已售3119 </span><div class="bottom-border"></div>
+								
+							</div>
+						</div>
+
+					</li>
+					<li class="floot_content_start_list5">
+						
+
+						<img id="img32" src="img/nuomi/32.jpg" alt="">
+						<div class="img30Information">
+							<h4>【人民广场】鑫海自助餐</h4>
+							<p>人民广场店-海鲜自助烤肉1位，节假日通用</p>
+							<div>
+								<span class="manfan">立减5.5元</span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>79.9
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">98</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.5分</span>
+								<span class="xiaoliang">已售3119 </span><div class="bottom-border"></div>
+								
+							</div>
+						</div>
+					</li>
+
+
+		
+
+					<li class="floot_content_start_list6">
+						
+
+						<img id="img33" src="img/nuomi/32.jpg" alt="">
+						<div class="img30Information">
+							<h4>【人民广场】鑫海自助餐</h4>
+							<p>人民广场店-海鲜自助烤肉1位，节假日通用</p>
+							<div>
+								<span class="manfan">立减5.5元</span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>79.9
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">98</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.5分</span>
+								<span class="xiaoliang">已售3119</span>
+								
+							</div>
+						</div>
+					</li>
+
+
+
+
+						<li class="floot_content_start_list7">
+						
+
+						<img id="img34" src="img/nuomi/32.jpg" alt="">
+						<div class="img30Information">
+							<h4>【人民广场】鑫海自助餐</h4>
+							<p>人民广场店-海鲜自助烤肉1位，节假日通用</p>
+							<div>
+								<span class="manfan">立减5.5元</span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>79.9
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">98</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.5分</span>
+								<span class="xiaoliang">已售3119</span>
+								
+							</div>
+						</div>
+					</li>
+
+					
+						<li class="floot_content_start_list8">
+						
+
+						<img id="img35" src="img/nuomi/28.jpg" alt="">
+						<div class="img30Information">
+							<h4>【人民广场】鑫海自助餐</h4>
+							<p>人民广场店-海鲜自助烤肉1位，节假日通用</p>
+							<div>
+								<span class="manfan">立减5.5元</span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>79.9
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">98</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.5分</span>
+								<span class="xiaoliang">已售3119</span>
+								
+							</div>
+						</div>
+					</li>
+
+
+
+
+					
+						<li class="floot_content_start_list9">
+						
+
+						<img id="img36" src="img/nuomi/29.jpg" alt="">
+						<div class="img30Information">
+							<h4>【人民广场】鑫海自助餐</h4>
+							<p>人民广场店-海鲜自助烤肉1位，节假日通用</p>
+							<div>
+								<span class="manfan">立减5.5元</span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>79.9
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">98</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.5分</span>
+								<span class="xiaoliang">已售3119</span>
+								
+							</div>
+						</div>
+					</li>
+
+
+
+						<li class="floot_content_start_list10">
+						
+
+						<img id="img36" src="img/nuomi/31.jpg" alt="">
+						<div class="img30Information">
+							<h4>【人民广场】鑫海自助餐</h4>
+							<p>人民广场店-海鲜自助烤肉1位，节假日通用</p>
+							<div>
+								<span class="manfan">立减5.5元</span>
+							</div>
+							<div class="goodsPrice">
+								<span class="moneyico">￥</span>79.9
+								<span class="jiazhi">
+									价值￥
+									<span class="jiage">98</span>
+								</span>
+							</div>
+							<div class="xinyong">
+								<span class="fenshu">4.5分</span>
+								<span class="xiaoliang">已售3119</span>
+								
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="check_all">
+					<a href="">查看全部团购</a>
+				</div>		
+			</div>
+			<div class="bottom_category">
+				<div class="bottom_cate">
+					<ul class="tab_nav">
+						<li class="hotMarket">热门商场</li>
+						<li class="hotCity">热门城市</li>
+						<li class="tuangouCate">团购分类</li>
+					</ul>
+					<div class="bottom_content">
+						<ul>
+							<li>日月光中心</li>
+							<li>正大广场</li>
+							<li>美罗城</li>
+							<li>万达广场(周浦店)</li>
+							<li>凯德龙之梦购物中心(长宁店)</li>
+							<li>金桥国际商业广场</li>
+							<li>正大乐城</li>
+							<li>梅龙镇广场</li>
+							<li>仲盛世界商城</li>
+							<li>悦达889广场</li>
+							<li>96广场</li>
+							<li>星游城</li>
+							<li>百联西郊购物中心</li>
+							<li>文峰广场</li>
+							<li>818广场</li>
+							<li>龙阳广场</li>
+							<li>新大陆广场</li>
+							<li>传奇广场</li>
+							<li>三林金谊广场</li>
+							<li>缤谷广场</li>
+							<li>宏伊广场</li>
+							<li>莘庄龙之梦</li>
+							<li>置地广场</li>
+							<li>嘉茂七宝购物广场</li>
+							<li>百联东郊购物中心</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+ </div> 
+
+ 		<div class="footer_content">
+				<div class="footer">
+					<div class="footer_inner">
+						<div class="footer_inner1">
+							<h3>用户帮助</h3>
+							<ul>
+								<li>常见团购问题</li>
+								<li>开放API</li>
+							</ul>
+						</div>
+						<div class="footer_inner2">
+							<h3>手机百度助手</h3>
+							<ul>
+								<li>百度糯米触屏版</li>
+								<li>下载手机版</li>
+							</ul>
+						</div>
+						<div class="footer_inner3">
+							<h3>商务合作</h3>
+							<ul>
+								<li>友情链接</li>
+								<li>市场合作</li>
+							</ul>
+						</div>
+						<div class="footer_inner4">
+							<h3>公司信息</h3>
+							<ul>
+								<li>关于百度糯米</li>
+								<li>百度糯米新浪微博</li>
+								<li>违规投诉&廉政举报</li>
+							</ul>
+						</div>
+						<div class="footer_inner5">
+							<h3>4006-888-887</h3>
+							<ul>
+								<li>周一至周日 9:00-22:00</li>
+								<li>客服电话 免长途费</li>
+							</ul>
+							手机专享优惠
+						</div>
+					</div>
+				</div>
+				<div></div>
+				<div></div>
+			</div>
+	<!-- <div class="goods"></div> -->
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+	</head>
+	<body>
+	<!-- form：表单，两个必备全局属性。action：行为 method：请求方式 -->
+	<!-- action 后台接口（后台提供的一串字符组成的链接） -->
+	<!-- method 请求方式post/get -->
+	<!-- 表单内部元素，可以收集用户输入信息 -->
+
+
+
+	<!-- 当需要提交信息具有key-value，便可以作为表单信息被携带 -->
+	<!-- 表单method 默认值是get：以拼接链接（将信息以key-value的方式拼接在原链接（action中的后台接口）之后） -->
+	<!-- post：以携带参数数据包形式提交参数（看不见） -->
+		<form action="" method="">
+			<!-- 文本输入框 value：该输入框的内容，可以设初值，一班不设
+			placeholder输入框占位符 -->
+			<input type="text" value="12345" placeholder="请输入用户名" name="user">
+
+
+			<!-- 密码输入框 -->
+			<input type="passord" placeholder="请输入密码" name="password">
+
+
+			<!-- 提交按钮  value按钮上面提示的字 -->
+			<!-- ？(由get方式提交)拼接参数  -->
+			<input type="submit" value="确认">
+		</form>
+	</body>
+</html>

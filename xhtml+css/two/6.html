@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.div1 {
+				width: 600px;
+				height: 600px;
+				background-color: blue;
+			}
+			.div1 {
+				/*背景图片相对于背景颜色是前置的*/
+				/*1、背景图片 url 路径*/
+				background-image: url(img/001.png);
+				/*2、设置平铺 no-repeat不平铺  repeat-x仅仅x轴平铺 repeat-y仅仅y轴平铺*/
+				background-repeat: no-repeat;
+				/*3、定位背景图片位置*/
+				/*可单独设置background-position-x */
+				/*可单独设置background-position-y */
+				/*水平方向：left/center/right  垂直方向top/center/bottom*/
+				/*长度单位：一个值控制的是水平方向，垂直方向默认居中；两个值时，分别控制水平居中方向上的偏移量（相对于左上角原点而言）*/
+				/*background-position: center bottom;*/
+				/*background-position: 50px 50px;*/
+				background-position: center ;
+
+				/*4、滑动属性 scroll的原点为div的原点，以及div尺寸而言；背景图片随所属标签滑动而滑动  */
+				/*fixed的原点是视图的原点，以及视图尺寸而言;背景图片不随所属标签滑动而滑动 （相差8*8像素） */
+				/*background-attachment: scroll;*/
+				/*background-attachment: fixed;*/
+
+				/*5、尺寸*/
+				/*一个参数时设置的是宽，高会等比缩放*/
+				background-size: 400px;
+				/*两个参数分别设置宽高，auto会根据另一个参数形参等比缩放*/
+				background-size: 400px 100px;
+				background-size: 400px auto;
+				/*contain适应屏幕的最大尺寸（等比缩放到一边充满屏幕）*/
+				background-size: contain;
+
+				/*复合型属性设置 背景(图片链接进来) 是否平铺 定位*/
+				background: red url(img/001.png) no-repeat center;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+	</body>
+</html>

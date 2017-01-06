@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>表格处理</title>
+		<style type="text/css">
+			table {
+				width: 600px;
+				height: 300px
+			}
+		</style>
+	</head>
+	<body>
+		<table border="1">
+			<caption>这是table的标题</caption>
+			<tr>
+				<td></td>
+				<!-- colspan=2 本质：该单元格占两列，如果想实现合并单元格效果，应该对应删除后面的一个单元格 -->
+				<td colspan="2"></td>
+				
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<!-- rowspan=2 本质：该单元格占两行，如果想实现合并单元格效果，应该对应删除下面行的一个单元格 -->
+				<td rowspan="2"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>

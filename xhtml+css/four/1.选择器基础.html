@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>选择器基础</title>
+		<style type="text/css">
+			
+
+			/*① 通配选择器:匹配html中所有标签*/
+			* {
+				margin: 0;
+			}
+			/*② 标签选择器*/
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				/*margin: 10px auto;*/
+			}
+			
+			p {
+				width: 200px;
+				height: 200px;
+				background-color: tan;
+				font-size: 50px;
+			}
+
+			h1 {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			/*③ 类选择器*/
+
+			.div2 {
+				background-color: orange;
+			}
+
+			/*④ id选择器*/
+			#ID3 {
+				background-color: yellow;
+			}
+
+			/*⑤ 后代选择器(包含选择器)：用于选择指定标签元素下的所有后代标签元素*/
+			/*格式：选择器 选择器.....目标选择器*/
+			p i {
+				color: blue;
+			}
+
+			/*⑥ 群组选择器:多个标签元素设置同一个样式*/
+			/*格式：选择器1，选择器2，.....选择器3*/
+			b,span, .div2, #ID3 {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">1</div>
+		<div class="div2">2</div>
+		<div class="div3" id="ID3">3</div>
+		<p>
+			<b>加粗</b>
+			<span>正常</span>
+			<i>斜体</i>
+		</p>
+		<h1><b>加粗</b><span>正常</span><i>斜体</i></h1>
+	</body>
+</html>

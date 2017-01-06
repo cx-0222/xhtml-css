@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			.sup {
+				width: 800px;
+				/*height: 500px;*/
+				background-color: cyan;
+				margin:0 auto;
+			}
+
+			.sup div {
+				width: 200px;
+				height: 200px;
+				/*background-color: red;*/
+			}
+			
+
+
+
+		/*浮动*/
+			/*1、子元素浮动，会(不完全)脱离文档流*/
+			/*2、特征：不再撑开父级标签高度，会影响父级标签的兄弟标签布局*/
+			/*3、如果父级元素有兄弟元素，为了布局不出问题，需要父级元素拥有合适的高度(正好包裹所有子元素）：清浮动 */
+			/*清浮动;让父级元素拥有合适的高度*/
+			.sub1 {
+				background-color: tan;
+				float: left;
+			}
+			.sub2 {
+				background-color: black;
+				float: left;
+			}
+			.sub3 {
+				background-color: pink;
+				float: left;
+			}
+			.second {
+				width: 200px;
+				height: 200px;
+				background-color: orange;
+			}
+
+
+			/*2、 清浮动*/
+			/*① 手动给父级元素一个高度*/
+			/*② 父级元素自身浮动*/
+			/*③ 父级使用overflow*/
+			/*④ 父级inline-block*/
+			/*⑤ 兄弟元素clear*/
+			/*⑥ 父级元素伪类清浮动*/
+
+			.sup:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sup">
+			<div class="sub1"></div>
+			<div class="sub2"></div>
+			<div class="sub3"></div>
+		</div>
+		 <div class="second"></div> 
+	</body>
+</html>

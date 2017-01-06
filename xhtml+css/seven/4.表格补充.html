@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>表格补充</title>
+	</head>
+	<body>
+	<!-- ① 表格中可以存放其他任意标签元素 -->
+	<!-- ② 所有嵌套元素必须为某一个单元格(td)的子元素 -->
+	<!-- ③ 操作第一行对应的全局属性width，值设置为对应百分比，可以控制所在列宽度(相对于整个表格而言) -->
+		<table border="1" width="300" height="200">
+			<tr>
+				<td width="30%">123abc呵呵</td>
+				<td>
+					<p>第一段</p>
+					<p>第二段</p>
+					<p>第三段</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="">前往百度</a>
+				</td>
+				<td>
+					<table border="1">
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>img的usemap属性练习</title>
+	</head>
+	<body>
+
+		<!-- usemap将图片定义为客户端映射 客户点击不同映射区域时，将会链接到不同的文件中  usemap属性与map标签中的name或id对应-->
+		<img src="img/001.png" usemap="#apMap">
+		
+		<map name="apMap" id="apMap">
+		<!-- area标签用来定义图片中有映射的区域（定义可点击的部分） -->
+		<!-- shape 定义区域的形状 default rect circ poly -->
+		<!-- coords 定义可点击的区域(敏感区域)的坐标 -->
+		<!-- 定义此区域的目标URL -->
+			<area shape="poly" coords="0,100,90,100,90,200,0,200" href="img/002.png" alt="" target="_self">
+		</map>
+
+		
+	</body>
+</html>

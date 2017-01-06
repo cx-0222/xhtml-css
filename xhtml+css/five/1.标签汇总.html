@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>标签汇总</title>
+	</head>
+	<body>
+		<!-- 1、常见标签 -->
+			<!-- ①行块标签 -->
+		<p>段落，块标签</p>
+		<h1>标题，块标签</h1>
+		<div>无意义标签，块标签</div>
+
+
+		<span>无意义标签，行标签</span>
+
+			<!-- ②单双标签 都应该闭合 -->
+			<br>
+			<hr>
+			<!-- ③复合标签 -->
+			<ul>
+				<li>无序列表</li>
+				<li>无序列表</li>
+				<li>无序列表</li>
+			</ul>
+		<!-- 2、文本标签 -->
+			<b>加粗</b>
+			<strong>强调，默认加粗显示</strong>
+			<i>斜体</i>
+			<em>强调，默认斜体显示</em>
+
+
+			<span>上角标<sup>上面</sup></span>
+			<span>下角标<sub>下面</sub></span>
+
+			<!-- left to right   right to left -->
+			<bdo dir="ltr">这是一段话，没有什么区别</bdo>
+			<bdo dir="rtl">这是一段话，没有什么区别</bdo>
+
+
+			<abbr title="application">APP</abbr>
+
+		<!-- 3、语义标签 -->
+			<blockquote>这里做长文引用</blockquote>
+			<q>这里做短引用</q>
+
+			<del>这些文字是删除了的</del>
+			<span>原有的一段<ins>插入文字</ins></span>
+
+			<big>大号字体，h5已删除 该标签</big>
+			<small>小号字体，该标签h5还保留</small>
+
+			<!-- 代码标签 -->
+			<code>
+				int a = 10;
+				a = 25;
+				printf("a的值是%d\n",a);
+			</code>
+
+			<!-- pre 格式化标签，保留一切标点符号（空格应经换行） -->
+			<pre>
+				int a = 10;
+				a = 25;
+				printf("a的值是%d\n",a);
+			</pre>
+
+		<!-- 锚点 -->
+			<!-- #空占位 -->
+			<a href="#">空链接</a>
+
+			<a href="" name="aaaaa"></a>
+			
+			<a href="1.测试锚点.html#aa" target="_blank">前往锚点</a>
+
+		<!--有序列表  reversed="reversed"倒序显示 -->
+			<ol type="I" start="5" reversed="reversed">
+				<li>有序列表</li>
+				<li>有序列表</li>
+				<li>有序列表</li>
+			</ol>
+
+
+	<!-- 5、图片map -->
+		<!-- ①无内容，不占空间 -->
+		<img src="" alt="">
+		<!-- ②图片多大，所占空间多大 -->
+		<img src="img/001.png" alt="">
+		<!-- ③不管图片多大，强行规定宽高 -->
+		<img src="img/001.png" alt="" style="width: 200px; height: 200px;">
+		<!-- ④只规定宽高时，会出现区域框 -->
+		<img src="" alt="" style="width: 200px; height: 200px;">
+
+
+
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

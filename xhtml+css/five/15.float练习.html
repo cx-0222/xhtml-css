@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>float练习</title>
+		<style type="text/css">
+			.top div, .center div, .bottom div {
+				width: 100px;
+				height: 100px;
+				background-color: white;
+
+			}
+			.top_1, .top_2, .top_3, .center_1, .center_2, .center_3, .bottom_1, .bottom_2, .bottom_3 {
+				float: left;
+
+			}
+			.top_1, .center_1 {
+				border-bottom: 1px solid black;
+			} 
+			.top_2, .top_3, .center_2, .center_3 {
+				border-left: 1px solid black;
+				border-bottom: 1px solid black;
+			}
+
+		
+			.center, .bottom{
+				clear: both;
+			}
+			
+			.bottom_1, .bottom_2 {
+				border-right: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="top">
+				<div class="top_1"></div>
+				<div class="top_2"></div>
+				<div class="top_3"></div>
+			</div>
+			<div class="center">
+				<div class="center_1"></div>
+				<div class="center_2"></div>
+				<div class="center_3"></div>
+			</div>
+			<div class="bottom">
+				<div class="bottom_1"></div>
+				<div class="bottom_2"></div>
+				<div class="bottom_3"></div>
+			</div>
+		</div>
+	</body>
+</html>

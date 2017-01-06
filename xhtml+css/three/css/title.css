@@ -1,0 +1,22 @@
+.t_left {
+	width: 60px;
+	height: 20px;
+	background-color: yellowgreen;
+	display: inline-block;
+	
+	
+}
+.t_right {
+	width: 30px;
+	height: 20px;
+	background-color: tan;
+	display: inline-block;
+	margin-left: 150px;
+	
+}
+.title {
+	width: 244px;
+	background-color: cyan;
+	padding: 5px 12px;
+	margin: 20px auto;
+}

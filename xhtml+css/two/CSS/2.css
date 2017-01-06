@@ -1,0 +1,11 @@
+/* 3、外联式 */
+/* .css文件就相当于内联style标签 */
+/* 不需要写style标签 */
+
+	#div3{
+
+		width:200px; 
+		height:200px; 
+		background:green;
+	}
+	

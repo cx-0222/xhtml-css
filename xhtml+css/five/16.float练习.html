@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>float练习</title>
+		<style type="text/css">
+			.top, .bottom {
+				width: 800px;
+				height: 50px;
+				background-color: green;
+			}
+			.c_left {
+				width: 500px;
+				height: 160px;
+				float: left;
+			}
+			.c_left_top {
+				width: 500px;
+				height: 50px;
+				background-color: yellow;
+			}
+
+			.c_left_center_1, .c_left_center_2 {
+				width: 250px;
+				height: 60px;
+				background-color: gray;
+				float: left;
+			}
+			.c_left_center_2 {
+				background-color: black;
+			}
+
+			.c_left_bottom {
+				clear: both;
+				width: 500px;
+				height: 50px;
+				background-color: red;
+			}
+
+			.c_right {
+				width: 300px;
+				height: 160px;
+				float: left;
+			}
+
+			.c_right_top {
+				width: 300px;
+				height: 90px;
+				background-color: #7FCEE9;
+			}
+			.c_right_bottom {
+				width: 300px;
+				height: 70px;
+				background-color: #00FFFE;
+			}
+			.bottom {
+				clear: both;
+				background-color: blue;
+			}
+
+			span {
+				color: white;
+				font-size: 40px;
+			}
+			#span1 {
+				line-height: 50px;
+				margin-left: 75px;
+			}
+			#span2, #span3, #span4, #span5 {
+				margin-left: 130px;
+			}
+			#span6 {
+				margin-left: 250px;
+				line-height: 50px;
+			}
+			#span8, #span9 {
+				margin-left: 125px;
+				line-height: 60px;
+			}
+			
+			
+			#span11 {
+				margin-left: 250px;
+				line-height: 50px;
+			}
+			#span7 {
+				margin-left: 150px;
+				line-height: 90px;
+			}
+			#span10 {
+				margin-left: 150px;
+				line-height: 70px;
+			}
+			#span12 {
+				margin-left: 400px;
+				line-height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<span id="span1">1</span>
+			<span id="span2">2</span>
+			<span id="span3">3</span>
+			<span id="span4">4</span>
+			<span id="span5">5</span>
+		</div>
+		<div class="center">
+			<div class="c_left">
+				<div class="c_left_top"><span id="span6">6</span></div>
+				<div class="c_left_center">
+					<div class="c_left_center_1"><span id="span8">8</span></div>
+					<div class="c_left_center_2"><span id="span9">9</span></div>
+				</div>
+				<div class="c_left_bottom"><span id="span11">11</span></div>
+			</div>
+			<div class="c_right">
+				<div class="c_right_top"><span id="span7">7</span></div>
+				<div class="c_right_bottom"><span id="span10">10</span></div>
+			</div>
+		</div>
+		<div class="bottom"><span id="span12">12</span></div>
+	</body>
+</html>

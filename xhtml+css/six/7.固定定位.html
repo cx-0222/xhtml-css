@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			.sup {
+				width: 400px;
+				height: 400px;
+				border:1px solid red;
+				margin:0 auto;
+
+				position: relative;
+			}
+
+			.sub {
+				width: 50px;
+				height: 50px;
+				background-color: red;
+
+
+				position: fixed;
+				left: 10px;
+				top: 10px;
+
+			/*屏幕中间*/
+				margin: -25px;
+				left: 50%;
+				top: 50%;
+
+				/*① 完全脱离文档流，可以通过z-index改变Z轴层*/
+				/*② 不在参考任何父级元素，参考系为document 即原始的整个屏幕*/
+				/*③ 不影响兄弟定位*/
+
+			}
+			.next {
+				width: 50px;
+				height: 50px;
+				background-color: red;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sup">
+			<div class="sub"></div>
+			<div class="next"></div>
+		</div>
+	</body>
+</html>

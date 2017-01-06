@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+
+		<style type="text/css">
+			a {
+				display: block;
+				width: 200px;
+				height: 200px;
+				margin: 20px auto;
+				background-color: orange;
+			}
+
+			a {
+				/*文字水平，垂直居中，且清除下划线*/
+				text-align: center;
+				line-height: 200px;
+				text-decoration: none;
+				font-size: 30px;
+			}
+
+			a:link {
+					/*没有去过时的颜色*/
+					color: red;
+			}
+			a:visited {
+				/*去过的颜色*/
+					color: white;
+			}
+
+			a:hover {
+				/*鼠标滑过时的颜色*/
+				color: green;
+				text-decoration: underline;
+				border-radius: 100px;
+			}
+
+			a:active {
+				/*鼠标点击的颜色*/
+				color: black;
+				
+			}
+
+			div {
+				width: 200px;
+				height: 200px;
+				
+				background-color: yellow;
+				transition: 3s;
+			}
+
+
+			/*两种均合法*/
+			/*div:hover {
+					border-radius: 100px;
+					background-color: red;
+			}*/
+
+			a:hover div {
+					border-radius: 100px;
+					background-color: red;
+			}
+
+
+
+
+			a:after {
+				content: "哈";
+			}
+			/*a:before {
+				content: "哈";
+			}*/
+		</style>
+
+	</head>
+	<body>
+		<a href="https://www.baidu.com">我是a标签</a>
+		<div></div>
+		<a href=""><div></div></a>
+	</body>
+</html>

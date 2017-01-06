@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>+选择器优先级</title>
+
+		<style type="text/css">
+			body {
+				font-size: 100px;
+			}
+
+
+			/*1、权值*/
+			/*
+				通配:1;
+				标签:10;
+				类:100;
+				id:1000;
+				行间式:10000;
+				关键字inportant:100000;
+			*/
+			
+			div div div {
+				/*查找范围最大的*/
+				color: red;
+			}
+			
+			div div div div {
+				/*查找范围最大的*/
+				color: orange;
+			}
+			
+			/*2、权值的计算只涉及同等选择器*/
+
+			div div div div div div div div div div div div {
+				color: orange;
+			}
+			#ID7 {
+				color: red;
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<div>
+				<div>
+					<div>
+						<div>
+							<div id="ID1">
+								<div class="div2">
+									<div>1
+										<div class="div4">
+											<div>
+												<div class="div6">
+													<div id="ID7">12345</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

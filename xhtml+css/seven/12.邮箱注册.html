@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+	<form style="text-align: center;">
+	<!-- text password value值表示初始值 name处理程序会用到 -->
+		电子邮箱：<input type="text" name="email" >
+		<br>
+		<br>
+		设置密码：<input type="password" name="password">
+		<br>
+		<br>
+		真实姓名：<input type="text" name="username" >
+		<br>
+		<br>
+		<!-- radio name单选按钮的名称，若要使多个单选按钮属于同一个选项组，必须使其具有相同的name值   value 单选按钮的值 -->
+		性别：<input type="radio" name="sex" value="male">男
+			 <input type="radio" name="sex" value="female">女
+			 <br>
+			 <br>
+		生日：<select name="year">
+				<option>2016</option>
+				<option>2015</option>
+				<option>2014</option>
+				<option>2013</option>
+				<option>2012</option>
+				<option>2011</option>
+				<option>2010</option>
+			 </select>年
+			 <select name="month">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+			 </select>月
+			  <select name="day">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+			 </select>日
+			 <br>
+			 <br>
+			 <a href="#" style="text-decoration: none; font-size: 12px"> 为什么要填写我的生日？</a>
+			 <br>
+			 <br> 
+			 我现在：<select>
+			 			<option>学生</option>
+						<option>工作</option>
+			 		</select>(非常重要)
+			 		<br>
+			 		<br> 		
+			 验证码：<input type="text" name="">
+					<span id="span"></span>
+					
+ 
+			 <br>
+			 <br>
+			 <input type="submit" name="" value="立即注册">
+			 
+</form>
+	</body>
+</html>

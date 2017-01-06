@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>内边距padding</title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+			}
+
+			p {
+				/*margin: 0;*/
+				background-color: blue;
+			}
+			.div2 {
+				/*border: 1px solid red;*/
+			}
+
+			.div1 {
+				/*上 右 下 左*/
+				padding: 10px;
+				/*float: left;*/
+
+			}
+
+			.div2 {
+				/*float: left;*/
+				padding-top: 10px;
+				margin-top: -200px;
+				margin-left: 250px;
+			}
+
+
+
+			/*盒模型宽：margin-left + border-left + padding-left + width + padding-right + border-right + margin-right */
+
+			/*盒模型高*/
+
+		</style>
+	</head>
+	<body>
+		<div class="div1">div1</div>
+		<div class="div2" >
+			<p>div2</p><!-- p 有margin 为16 所以div1 div2之间有距离-->
+		</div>
+	</body>
+</html>

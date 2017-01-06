@@ -1,0 +1,23 @@
+.t_left {
+	width: 120px;
+	height: 20px;
+	background-color: #EB902F;
+	display: inline-block;
+	
+	
+}
+.t_right {
+	width: 30px;
+	height: 20px;
+	background-color: #BCC73F;
+	display: inline-block;
+	margin-left: 390px;
+	
+}
+.title {
+	width: 550px;
+	height: 20px;
+	background-color: #EEFA63;
+	padding: 10px;
+	margin: 20px auto;
+}

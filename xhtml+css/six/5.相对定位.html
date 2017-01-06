@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>相对定位</title>
+		<style type="text/css">
+			.sup {
+				width: 400px;
+				height: 400px;
+				border:1px solid red;
+				margin:0 auto;
+			}
+			.sub {
+				width: 50px;
+				height: 50px;
+				background-color: orange;
+
+				/*相对定位*/
+				position: relative;
+
+				/*① 当元素拥有定位属性时，会打开该元素left right top bottom 四个方位词*/
+				/*② 相对定位的参考坐标为该元素未定位之前的初始位置坐标的坐标系*/
+				/*③ 左右取左，上下取上*/
+				/*④ 定位的点为元素左上角（0，0）*/
+				/*⑤ 定位不影响该元素的原始位置（去除所有定位设置，元素所在位置就是元素位置）*/
+				/*⑥ 相对定位，元素不脱离文档*/
+				left: 10px;
+				top: 10px;
+
+				/*父级元素中心*/
+/*
+				left: 175px;
+				top: 175px;*/
+
+
+/*
+				left: 50%;
+				top:50%;
+				margin-top: -25px;
+				margin-left: -25px;*/
+
+			} 
+			.next {
+				width: 50px;
+				height: 50px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sup">
+			<div class="sub"></div>
+			<div class="next"></div>
+		</div>
+	</body>
+</html>

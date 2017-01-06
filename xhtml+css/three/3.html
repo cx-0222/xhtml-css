@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>margin</title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				border: 1px solid blue;
+			}
+			.div1 {
+				/*顺时针  分别代表上 右(左) 下*/
+				margin: 10px 20px 40px ;
+
+				/* 水平居中(上下0  左右auto自适应)*/
+				margin: 10px auto ;
+				margin: auto;
+				
+			}
+			
+			/*①body自带margin*/
+			
+			body {
+				width: 100%;
+				/*初始化body标签*/
+				margin: 0;
+			}
+
+			.div1 {
+				margin-left: 20px;
+				margin-top: 10px;
+
+			}
+			
+			/*② top*/
+				/* 1、margin-top 是相对于最近的父类标签而言*/
+				/* 2、如果父类标签没有边界，margin-top属性移植成父类标签的属性，且再次往上查找父类标签*/
+				/* 3、如果一直没有边界，最终查找到文档层*/
+			.sub {
+				width: 50px;
+				height: 50px;
+				background-color: green;
+				/*margin 重叠取大值 当该标签的父类没有边界时，该样式会给父类标签(父类再去找父类)*/
+				margin-top: 100px;
+			}
+
+			/*③top 重叠*/
+				/*如果父子标签在②的情况下，margin-top存在多个值，取大值*/
+
+
+			/*④top letf 影响自身布局 ； right bottom 影响兄弟布局*/
+				.div1 {
+					/*下外边距为30px 相当于把下面的(兄弟标签)向下挤*/
+					margin-bottom: 30px;
+				}
+
+				.div2 {
+					margin-top: 60px;
+				}
+				
+				span {
+					margin-right: 100px;
+				}
+
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<div class="sub"></div>
+		</div>
+
+		<div class="div2"></div> 
+
+
+
+		<span>12345</span> 
+		<span>12345</span>
+	</body>
+</html>
